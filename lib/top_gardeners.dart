@@ -365,7 +365,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Ahmadi Yoga Pratama',
                             title: 'Ecosystem | 220 Kg',
                             imagePath: 'assets/images/profile8.png',
-                            badgePath: 'assets/images/thirdwin.png',
+                            badgePath: 'assets/images/secondwin.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -373,7 +373,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Kia Kiu Kio',
                             title: 'Ecosystem | 210 Kg',
                             imagePath: 'assets/images/profile7.png',
-                            badgePath: 'assets/images/secondwin.png',
+                            badgePath: 'assets/images/thirdwin.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -381,7 +381,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Hafid Harfin',
                             title: 'Ecosystem | 200 Kg',
                             imagePath: 'assets/images/profile5.png',
-                            badgePath: 'assets/images/firstwin.png',
+                            badgePath: 'assets/images/empat.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -389,7 +389,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Karina',
                             title: 'Garden | 150 Kg',
                             imagePath: 'assets/images/profile6.png',
-                            badgePath: 'assets/images/secondwin.png',
+                            badgePath: 'assets/images/lima.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -397,7 +397,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Slamet Riadi',
                             title: 'Bloom | 90 Kg',
                             imagePath: 'assets/images/profile4.png',
-                            badgePath: 'assets/images/thirdwin.png',
+                            badgePath: 'assets/images/enam.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -405,7 +405,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Bobby Kartanegara',
                             title: 'Bloom | 75 Kg',
                             imagePath: 'assets/images/profile3.png',
-                            badgePath: 'assets/images/firstwin.png',
+                            badgePath: 'assets/images/tujuh.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -413,7 +413,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Fairuz Salim',
                             title: 'Tree | 58 Kg',
                             imagePath: 'assets/images/profile2.png',
-                            badgePath: 'assets/images/secondwin.png',
+                            badgePath: 'assets/images/lapan.png',
                           ),
                           _buildDivider(),
                           _buildLeaderboard(
@@ -421,7 +421,7 @@ class _TopGardenersState extends State<TopGardeners> {
                             name: 'Sakinah Diva',
                             title: 'Tree | 50 Kg',
                             imagePath: 'assets/images/profile1.png',
-                            badgePath: 'assets/images/thirdwin.png',
+                            badgePath: 'assets/images/sembilan.png',
                           ),
                         ],
                       ),

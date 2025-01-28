@@ -34,7 +34,7 @@ class DetailEcotiers extends StatelessWidget {
                     },
                   ),
                   Text(
-                    'Detail Class',
+                    'Detail Tiers',
                     style: GoogleFonts.readexPro(
                       color: const Color(0xFF54340B),
                       fontSize: 37,
