@@ -7,7 +7,6 @@ import 'package:trashie_skilltest/top_gardeners.dart';
 import 'package:trashie_skilltest/trashie_class.dart';
 import 'package:trashie_skilltest/trashie_event.dart';
 import 'package:trashie_skilltest/trashie_market.dart';
-import 'colors.dart';
 
 void main() {
   runApp(MaterialApp(title: "Trashie", home: LoginPage()));
@@ -21,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Trashie',
       theme: ThemeData(
-        primarySwatch: customColor,
+        primaryColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: LoginPage(),
