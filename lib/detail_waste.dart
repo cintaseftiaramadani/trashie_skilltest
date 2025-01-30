@@ -31,7 +31,7 @@ class DetailWaste extends StatelessWidget {
                     },
                   ),
                   Text(
-                    'Detail Class',
+                    'Detail Waste',
                     style: GoogleFonts.readexPro(
                       color: const Color(0xFF54340B),
                       fontSize: 37,
