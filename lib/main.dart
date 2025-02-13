@@ -3,13 +3,14 @@ import 'package:trashie_skilltest/eco_tiers.dart';
 import 'package:trashie_skilltest/eco_trackers.dart';
 import 'package:trashie_skilltest/home_screen.dart';
 import 'package:trashie_skilltest/login_page.dart';
+import 'package:trashie_skilltest/start_page.dart';
 import 'package:trashie_skilltest/top_gardeners.dart';
 import 'package:trashie_skilltest/trashie_class.dart';
 import 'package:trashie_skilltest/trashie_event.dart';
 import 'package:trashie_skilltest/trashie_market.dart';
 
 void main() {
-  runApp(MaterialApp(title: "Trashie", home: LoginPage()));
+  runApp(MaterialApp(title: "Trashie", home: StartPage()));
 }
 
 class MyApp extends StatelessWidget {
@@ -23,10 +24,11 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginPage(),
+      home: StartPage(),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
+        'Login': (context) => const LoginPage(),
         'TopGardners': (context) => const TopGardeners(),
         'EcoTiers': (context) => const EcoTiers(),
         'EcoTrackers': (context) => const EcoTrackers(),

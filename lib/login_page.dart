@@ -45,64 +45,70 @@ class _LoginPageWidgetState extends State<LoginPage>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      key: scaffoldKey,
-      backgroundColor: const Color(0xFF6295A2),
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(32.0),
-                child: Center(
-                  child: Text(
-                    'TRASHIE',
-                    style: GoogleFonts.inter(
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      fontSize: 50,
-                      fontWeight: FontWeight.w800,
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context)
+            .unfocus(); // untuk menghilangkan fokus saat area lain diklik
+      },
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: const Color(0xFF6295A2),
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(32.0),
+                  child: Center(
+                    child: Text(
+                      'TRASHIE',
+                      style: GoogleFonts.inter(
+                        color: const Color.fromARGB(255, 255, 255, 255),
+                        fontSize: 50,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Container(
-                  constraints: const BoxConstraints(maxWidth: 570),
-                  padding: const EdgeInsets.all(16.0),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFF0E8D5),
-                    borderRadius: BorderRadius.circular(12),
-                    border:
-                        Border.all(color: const Color(0xFF3E7B27), width: 2),
-                  ),
-                  child: Column(
-                    children: [
-                      TabBar(
-                        controller: _tabController,
-                        labelColor: Colors.black,
-                        unselectedLabelColor: Colors.grey,
-                        indicatorColor: const Color(0xFF3E7B27),
-                        tabs: const [
-                          Tab(text: 'Create Account'),
-                          Tab(text: 'Log In'),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 400, // Adjust height as needed
-                        child: TabBarView(
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Container(
+                    constraints: const BoxConstraints(maxWidth: 570),
+                    padding: const EdgeInsets.all(16.0),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF0E8D5),
+                      borderRadius: BorderRadius.circular(12),
+                      border:
+                          Border.all(color: const Color(0xFF3E7B27), width: 2),
+                    ),
+                    child: Column(
+                      children: [
+                        TabBar(
                           controller: _tabController,
-                          children: [
-                            _buildCreateAccountTab(),
-                            _buildLoginTab(),
+                          labelColor: Colors.black,
+                          unselectedLabelColor: Colors.grey,
+                          indicatorColor: const Color(0xFF3E7B27),
+                          tabs: const [
+                            Tab(text: 'Create Account'),
+                            Tab(text: 'Log In'),
                           ],
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          height: 400, // Adjust height as needed
+                          child: TabBarView(
+                            controller: _tabController,
+                            children: [
+                              _buildCreateAccountTab(),
+                              _buildLoginTab(),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

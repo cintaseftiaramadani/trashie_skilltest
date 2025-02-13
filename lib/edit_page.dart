@@ -16,10 +16,12 @@ class _EditPageState extends State<EditPage> {
   final _textController3 = TextEditingController();
   final _textController4 = TextEditingController();
   final _textController5 = TextEditingController();
+  String? _selectedGender;
 
   @override
   void initState() {
     super.initState();
+    _selectedGender = 'Female'; // default value
   }
 
   @override
@@ -286,10 +288,7 @@ class _EditPageState extends State<EditPage> {
                                     return null;
                                   },
                                 ),
-                                TextFormField(
-                                  controller: _textController4,
-                                  autofocus: false,
-                                  obscureText: false,
+                                DropdownButtonFormField(
                                   decoration: InputDecoration(
                                     labelText: 'Gender',
                                     labelStyle: GoogleFonts.readexPro(),
@@ -324,17 +323,29 @@ class _EditPageState extends State<EditPage> {
                                     ),
                                     filled: true,
                                     fillColor: const Color(0xFFF5F5F5),
-                                    suffixIcon:
-                                        const Icon(Icons.female_rounded),
                                   ),
-                                  style: GoogleFonts.readexPro(),
-                                  minLines: 1,
+                                  value: _selectedGender,
+                                  onChanged: (String? newValue) {
+                                    setState(() {
+                                      _selectedGender = newValue;
+                                    });
+                                  },
                                   validator: (value) {
                                     if (value == null || value.isEmpty) {
-                                      return 'Please enter your gender';
+                                      return 'Please select your gender';
                                     }
                                     return null;
                                   },
+                                  items: const [
+                                    DropdownMenuItem(
+                                      child: Text('Female'),
+                                      value: 'Female',
+                                    ),
+                                    DropdownMenuItem(
+                                      child: Text('Male'),
+                                      value: 'Male',
+                                    ),
+                                  ],
                                 ),
                                 TextFormField(
                                   controller: _textController5,
